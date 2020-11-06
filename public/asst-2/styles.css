@@ -46,3 +46,11 @@ h1 {
     flex-wrap: nowrap;
     border-radius: 4px;
   }
+
+.navContainer li {
+    border-bottom: 1px solid rgb(64, 226, 15);
+    margin: 0px;
+    padding: 10px;
+    border-radius: 3px;
+    background: linear-gradient(rgb(224, 7, 214) 35%, rgb(12, 85, 5) 100%);
+}
