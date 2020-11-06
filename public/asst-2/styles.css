@@ -1,0 +1,42 @@
+body {
+  background: #3d009e;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  min-height: 100%;
+}
+
+.header {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+h1 {
+    margin: 20px 50px;
+    padding: 0 20px;
+    min-height: 75px;
+    background-color: #2dc1fb;
+    color: black;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    flex-wrap: nowrap;
+    border-radius: 4px;
+  }
