@@ -54,3 +54,8 @@ h1 {
     border-radius: 3px;
     background: linear-gradient(rgb(224, 7, 214) 35%, rgb(12, 85, 5) 100%);
 }
+
+.textinput {
+    padding: 6px 14px;
+    border-radius: 30px;
+}
