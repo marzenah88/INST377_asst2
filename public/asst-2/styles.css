@@ -1,5 +1,11 @@
 body {
   background: #3d009e;
+  font-size: 1.0em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* color: rgb(34, 34, 34); */
+  color: #f72307;
 }
 
 .wrapper {
