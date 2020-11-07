@@ -28,7 +28,7 @@ document.body.addEventListener('submit', async (e) => {
     const form = $(e.target).serializeArray();
     const restaurants = [];
     fetch('/api', {
-      method: 'POST',
+      method: 'GET',
       headers: {
         'Content-Type': 'application/json'
       },
