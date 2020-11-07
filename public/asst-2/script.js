@@ -1,10 +1,5 @@
 
-function narrowDataScope (data) {
-    const objectList = data.map(restaurant => ${data.name} ${data.address_line1} ${data.city} ${data.state} ${data.zip});
-    console.log(objectList)
-    return objectList;
-} 
-  
+
   
 function getResults(jsonFromServer) {
     console.log('jsonFromServer', jsonFromServer);
@@ -24,7 +19,7 @@ function getResults(jsonFromServer) {
 }
 
   
-/*document.body.addEventListener('submit', async (e) => {
+document.body.addEventListener('submit', async (e) => {
     e.preventDefault(); 
     const form = $(e.target).serializeArray();
     fetch('/api', {
@@ -35,8 +30,7 @@ function getResults(jsonFromServer) {
       body: JSON.stringify(form)
     })
       .then((fromServer) => fromServer.json())
-      .then((jsonFromServer) => getResults(jsonFromServer))   
+      .then((jsonFromServer) => getResults(...jsonFromServer))   
     console.log(err);
 });
 
-  */
