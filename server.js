@@ -16,7 +16,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static('public/asst-2'));
+app.use(express.static('public'));
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -29,14 +29,13 @@ app.route('/api')
     console.log('GET request detected');
     res.send(`Lab 5 for ${process.env.NAME}`);
   })
-  .post(async (req, res) => {
+  .post(async(req, res) => {
     console.log('POST request detected');
     console.log('Form data in res.body', req.body);
-
-    const raw_data = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json');
-    const formatted_data = await raw_data.json();
-    console.log('data from fetch', formatted_data);
-    res.json(formatted_data);
+    const data = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json');
+    const json = await data.json();
+    console.log('fetch request data', json);
+    res.send(json);
   });
 
 app.listen(port, () => {
