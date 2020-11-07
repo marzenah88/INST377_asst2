@@ -9,19 +9,20 @@ function narrowDataScope (data) {
 function getResults(jsonFromServer) {
     console.log('jsonFromServer', jsonFromServer);
     
-    const narrowData = narrowDataScope(jsonFromServer);
+   /* const narrowData = narrowDataScope(jsonFromServer);
     const matchedResults = matchText(input_text, narrowData);
     const options = makeYourOptionsObject(reorganizedData);
     const chart = new CanvasJS.Chart('chartContainer', options);
     chart.render();
-}
-function matchText(input_text, restaurants) {
+
+    function matchText(input_text, restaurants) {
     return restaurants.filter(venue => {
         const regex = new RegExp(wordToMatch, 'gi');
         return venue.
     })
+    */
 }
-  
+
   
 document.body.addEventListener('text', async (e) => {
     e.preventDefault(); 
