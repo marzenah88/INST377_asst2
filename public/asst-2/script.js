@@ -23,12 +23,12 @@ function matchText(input_text, restaurants) {
 }
   
   
-document.body.addEventListener('submit', async (e) => {
+document.body.addEventListener('text', async (e) => {
     e.preventDefault(); 
     const form = $(e.target).serializeArray();
     const restaurants = [];
     fetch('/api', {
-      method: 'GET',
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
