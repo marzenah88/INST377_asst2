@@ -59,3 +59,9 @@ h1 {
     padding: 6px 14px;
     border-radius: 30px;
 }
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
