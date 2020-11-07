@@ -24,7 +24,7 @@ function getResults(jsonFromServer) {
 }
 
   
-document.body.addEventListener('text', async (e) => {
+document.body.addEventListener('submit', async (e) => {
     e.preventDefault(); 
     const form = $(e.target).serializeArray();
     fetch('/api', {
