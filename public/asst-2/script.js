@@ -1,6 +1,3 @@
-
-
-  
 function getResults(jsonFromServer) {
     console.log('jsonFromServer', jsonFromServer);
     
