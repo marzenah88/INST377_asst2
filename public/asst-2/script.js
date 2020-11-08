@@ -33,9 +33,6 @@ function getResults(data){
 }
   
 document.body.addEventListener('submit', async (e) => {
-    e.preventDefault(); 
-    const form = $(e.target).serializeArray();
-    
     fetch('/api', {
       method: 'POST',
       headers: {
