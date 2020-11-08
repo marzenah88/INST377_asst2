@@ -16,7 +16,7 @@ function displayMatches() {
 }
 
 
-function getResults(data {
+function getResults(data){
     console.log('jsonFromServer', jsonFromServer);
     const searchInput = document.querySelector('.searchbar');
     const suggestions = document.querySelector('.suggestions');
