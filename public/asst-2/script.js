@@ -14,7 +14,7 @@ function findMatches(wordsToMatch, venues) {
         if (wordsToMatch === "") {
             return null;
         } else {
-            return venue.name.match(regex) || venue.city.match(regex);
+            return venue.name.match(regex) || venue.venue.match(regex);
         }
     });
 }
