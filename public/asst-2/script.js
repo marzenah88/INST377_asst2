@@ -15,17 +15,27 @@ function displayMatches() {
   suggestions.innerHTML = html;
   console.log(venues);
 }
+function findMatches(inputString, venues) {
+  return venues.filter(venue => {
+    const regex = new RegExp(wordToMatch, 'gi');
+    return venue.name.match(regex) || venue.city.match(regex);
+  });
+}
+
 
 function getResults(data){
-    const searchInput = document.querySelector('.searchbar');
+    console.log(data);
+    const venues = [];
+    venues.push(...data)
+    const searchInput = document.querySelector('.textinput');
     const suggestions = document.querySelector('.suggestions');
     displayMatches();
 }
   
 document.body.addEventListener('submit', async (e) => {
-    //e.preventDefault(); 
-    //const form = $(e.target).serializeArray();
-    const venues = [];
+    e.preventDefault(); 
+    const form = $(e.target).serializeArray();
+    
     fetch('/api', {
       method: 'POST',
       headers: {
@@ -34,8 +44,10 @@ document.body.addEventListener('submit', async (e) => {
       body: JSON.stringify(form)
     })
       .then((fromServer) => fromServer.json())
-      .then((jsonFromServer) => venues.push(...jsonFromServer))   
-      .then((venues) => getResults(venues))
+      .then((jsonFromServer) => getResults(jasonFromServer))
+ 
     console.log(err);
 });
 
+//.then((jsonFromServer) => venues.push(...jsonFromServer))   
+ //     .then((venues) => getResults(venues))
