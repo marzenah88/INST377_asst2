@@ -6,6 +6,7 @@ html {
 body {
   /* background: #3d009e; */
   background: linear-gradient(rgb(7, 199, 224) 35%, rgb(11, 54, 248) 100%);
+  background-attachment: fixed;
   font-size: 1.0em;
   line-height: 1.6;
   font-weight: 400;
@@ -38,7 +39,7 @@ body {
 
 h1 {
     margin: 20px 50px;
-    padding: 0 20px;
+    padding: 0px 20px;
     min-height: 75px;
     /* background-color: #2dc1fb; */
     background-color: rgb(49, 85, 245);
@@ -55,21 +56,48 @@ h1 {
     border-radius: 16px;
   }
 
-.navContainer li {
-    border-bottom: 1px solid rgb(64, 226, 15);
-    margin: 0px;
-    padding: 10px;
-    border-radius: 3px;
-    background: linear-gradient(rgb(7, 199, 224) 35%, rgb(11, 54, 248) 100%);
-}
-
 .textinput {
-    padding: 6px 14px;
-    border-radius: 30px;
+    margin: 6px 50px;
+    padding: 0 25px;
+    border-radius: 600px;
+    line-height: 1.5;
+    min-width: 500px;
+    font-size: 33px;
 }
 
 .searchbar {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.highlightme { 
+  background-color:rgb(7, 199, 224); 
+}
+
+.suggestions {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 0px;
+}
+
+li {
+  margin: 6px 50px;
+  padding: 0 20px;
+  min-height: 50px;
+  min-width: 500px;
+  /* background-color: #2dc1fb; */
+  background-color: rgb(231, 231, 231);
+  /* color: black; */
+  color: rgb(2, 0, 107);
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.0em;
+  text-transform: capitalize;
+  flex-wrap: nowrap;
+  border-radius: 16px;
 }
