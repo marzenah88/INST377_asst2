@@ -30,6 +30,7 @@ function displayMatches() {
                 <span class="population">${venueName}</span>
                 <span class="name">${venueCity}, ${venue.zip}</span>
                 <span class="population">${venue.category}</span>
+                <span class="population">${venue.inspection_results}</span>
             </li>
         `;
     }).join('');
