@@ -3,7 +3,7 @@ const lab_data = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json
 
 const venues = [];
 
-fetch(labs_data)
+fetch(lab_data)
     .then(blob => blob.json())
     .then(data => cities.push(...data))
     ;
