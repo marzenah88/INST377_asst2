@@ -13,11 +13,11 @@ function displayMatches() {
     `;
   }).join('');
   suggestions.innerHTML = html;
+  console.log(venues);
 }
 
 
 function getResults(data){
-    console.log('jsonFromServer', jsonFromServer);
     const searchInput = document.querySelector('.searchbar');
     const suggestions = document.querySelector('.suggestions');
     displayMatches();
