@@ -6,9 +6,9 @@ function displayMatches() {
     const venueCity = venue.city.replace(regex, `<span class="hl"> ${this.value} </span>`);
     return `
     <li>
-      <span class="name"> ${venueName}</span>
-      <span class="location"> ${venueCity}, ${venue.zip}</span>
-      <span class="category"> ${venue.category}</span>
+      <span class="name"> ${venueName}</span>;
+      <span class="location"> ${venueCity}, ${venue.zip}</span>;
+      <span class="category"> ${venue.category}</span>;
     </li>
     `;
   }).join('');
