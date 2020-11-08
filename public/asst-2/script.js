@@ -1,24 +1,12 @@
-function getResults(jsonFromServer) {
+function getResults(data {
     console.log('jsonFromServer', jsonFromServer);
-    
-   /* const narrowData = narrowDataScope(jsonFromServer);
-    const matchedResults = matchText(input_text, narrowData);
-    const options = makeYourOptionsObject(reorganizedData);
-    const chart = new CanvasJS.Chart('chartContainer', options);
-    chart.render();
-
-    function matchText(input_text, restaurants) {
-    return restaurants.filter(venue => {
-        const regex = new RegExp(wordToMatch, 'gi');
-        return venue.
-    })
-    */
 }
 
   
 document.body.addEventListener('submit', async (e) => {
     e.preventDefault(); 
     const form = $(e.target).serializeArray();
+    const venues = [];
     fetch('/api', {
       method: 'POST',
       headers: {
@@ -27,7 +15,8 @@ document.body.addEventListener('submit', async (e) => {
       body: JSON.stringify(form)
     })
       .then((fromServer) => fromServer.json())
-      .then((jsonFromServer) => getResults(...jsonFromServer))   
+      .then((jsonFromServer) => venues.push(...jsonFromServer))   
+      .then((venues) => getResults(venues))
     console.log(err);
 });
 
