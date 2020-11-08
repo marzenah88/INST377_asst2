@@ -5,7 +5,7 @@ const venues = [];
 
 fetch(lab_data)
     .then(blob => blob.json())
-    .then(data => cities.push(...data))
+    .then(data => venues.push(...data))
     ;
 
 function findMatches(wordsToMatch, venues) {
