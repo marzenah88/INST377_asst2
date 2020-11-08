@@ -39,3 +39,4 @@ function displayMatches() {
   }).join('');
   suggestions.innerHTML = html;
 }
+//end of script
