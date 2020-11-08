@@ -1,5 +1,26 @@
+function displayMatches() {
+  const matchArray = findMatches(this.value, venues);
+  const html = matchArray.map(venue => {
+    const regex = new RegExp(this.value, 'gi');
+    const venueName = venue.name.replace(regex, `<span class="hl"> ${this.value} </span>`);
+    const venueCity = venue.city.replace(regex, `<span class="hl"> ${this.value} </span>`);
+    return `
+    <li>
+      <span class="name"> ${venueName}</span>
+      <span class="location"> ${venueCity}, ${venue.zip}</span>
+      <span class="category"> ${venue.category}</span>
+    </li>
+    `;
+  }).join('');
+  suggestions.innerHTML = html;
+}
+
+
 function getResults(data {
     console.log('jsonFromServer', jsonFromServer);
+    const searchInput = document.querySelector('.searchbar');
+    const suggestions = document.querySelector('.suggestions');
+    displayMatches);
 }
 
   
