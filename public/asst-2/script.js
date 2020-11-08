@@ -16,13 +16,11 @@ function displayMatches() {
   console.log(venues);
 }
 
-
 function getResults(data){
     const searchInput = document.querySelector('.searchbar');
     const suggestions = document.querySelector('.suggestions');
     displayMatches();
 }
-
   
 document.body.addEventListener('submit', async (e) => {
     e.preventDefault(); 
