@@ -12,11 +12,11 @@ function findMatches(wordsToMatch, venues) {
     return venues.filter(venue => {
         const regex = new RegExp(wordsToMatch, 'gi');
         if (wordsToMatch === "") {
-            return null
+            return null;
         } else {
             return venue.name.match(regex) || venue.city.match(regex);
         }
-    })
+    });
 }
 
 function displayMatches() {
