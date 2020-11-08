@@ -13,9 +13,8 @@ function findMatches(wordsToMatch, venues) {
         const regex = new RegExp(wordsToMatch, 'gi');
         if (wordsToMatch === "") {
             return null;
-        } else {
-            return venue.name.match(regex) || venue.city.match(regex);
         }
+        return venue.name.match(regex) || venue.city.match(regex);
     });
 }
 
