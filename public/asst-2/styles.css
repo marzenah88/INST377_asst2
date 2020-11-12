@@ -28,8 +28,9 @@ body {
   margin: 0;
   margin-bottom: 5px;
   padding: 4px 8px;
-  border-radius: 4px;
-}
+  border-radius: 5px;
+  border-color: rgb(19, 18, 1); 
+ }
 h1 {
     margin: 20px 50px;
     padding: 0px 20px;
@@ -44,19 +45,30 @@ h1 {
     text-transform: capitalize;
     flex-wrap: nowrap;
     border-radius: 16px;
+   
   }
 .textinput {
     margin: 6px 50px;
-    padding: 0 25px;
+    padding-left: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-radius: 600px;
     line-height: 1.5;
     min-width: 500px;
-    font-size: 33px;
+    font-size: 28px;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: center;
+    justify-content: center;
+    font-style: oblique;
+    color: rgb(93, 125, 145);
 }
 .searchbar {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-width: 5px;
+  border-color: black;
 }
 .highlightme { 
   background-color:rgb(223, 219, 8); 
@@ -83,6 +95,14 @@ li {
   flex-wrap: wrap;
   border-radius: 16px;
 }
-.name, .cityAndZip {
+.name {
+  text-transform: uppercase;
+}
+.cityAndZip {
   text-transform: capitalize;
+}
+.inspectionResults, .establishmentType {
+  font-family: 'Eczar', serif;
+  font-style: oblique;
+  color: rgb(93, 125, 145);
 }

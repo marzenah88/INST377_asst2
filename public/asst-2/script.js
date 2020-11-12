@@ -32,3 +32,4 @@ function displayMatches() {
 const searchInput = document.querySelector('.textinput');
 const suggestions = document.querySelector('.suggestions');
 searchInput.addEventListener('input', displayMatches);
+
