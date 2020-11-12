@@ -95,14 +95,3 @@ li {
   flex-wrap: wrap;
   border-radius: 16px;
 }
-.name {
-  text-transform: uppercase;
-}
-.cityAndZip {
-  text-transform: capitalize;
-}
-.inspectionResults, .establishmentType {
-  font-family: 'Eczar', serif;
-  font-style: oblique;
-  color: rgb(93, 125, 145);
-}
