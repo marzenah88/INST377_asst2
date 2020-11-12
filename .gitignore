@@ -15,32 +15,32 @@ cypress/fixtures/test_values.json
 # -------------------------------------------------
 # Misc CSS Caching
 # -------------------------------------------------
-# .sass-cache/
-# *.css.map
+.sass-cache/
+*.css.map
 
 # -------------------------------------------------
 # OS generated files
 # -------------------------------------------------
 .DS_Store
-# .DS_Store?
-# ._*
-# .Spotlight-V100
-# .Trashes
-# ehthumbs.db
-# Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # -------------------------------------------------
 # Logs and databases
 # -------------------------------------------------
-# logs
-# *.log
-# npm-debug.log
+logs
+*.log
+npm-debug.log
 
 # -------------------------------------------------
 # Dependency directories
 # Commenting this out is preferred by some people, see
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 # -------------------------------------------------
-# bower_components
+bower_components
 node_modules
-# **/*/node_modules
+**/*/node_modules
